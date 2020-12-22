@@ -152,7 +152,7 @@ vector<Event> TravelSalesman::TwoOpt(const vector<Event>& events)
 		
 	do
 	{
-		length = minLength;
+		minLength = length;
 
 		for (auto itI = next(retVal.begin()); itI != prev(retVal.end()); ++itI)
 		{
